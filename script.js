@@ -22,5 +22,7 @@ let courses = {
 };
 
 for (let courseNum in courses) {
+   if (courses[courseNum].creditHours === 3) {
    console.log(courseNum + " - " + courses[courseNum].title + ", " + courses[courseNum].description + ", " + courses[courseNum].creditHours);
+   }
 }
